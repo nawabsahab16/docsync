@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 
 import "./globals.css";
 import { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 
 const fontSans = FontSans({
@@ -13,22 +15,35 @@ const fontSans = FontSans({
 })
  
 export const metadata : Metadata = {
-  title : "DocSync",
+  title : "LiveDocs",
   description: "Best collaborative editor out there",
 }
 
 export default function RootLayout({ children} : {children: React.ReactNode} ) {
-  return (
-    <html lang="en" suppressHydrationWarning>
+  return ( 
+    <ClerkProvider
+    appearance={{
+      baseTheme: dark,
+      variables: { 
+        colorPrimary: "#3371FF" ,
+        fontSize: '16px'
+      },
+    }}
+    >
+      
+      <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen font-sans antialiased",
-          fontSans.variable
-        )}
-      >
-        {children}
+           fontSans.variable
+         )}
+       >
+         {children}
       </body>
-    </html>
+      </html>
+
+    </ClerkProvider>
+  
   )
 }
 
