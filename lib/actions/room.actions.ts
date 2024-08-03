@@ -43,6 +43,8 @@ export const getDocument = async ({roomId, userId} : {roomId: string; userId: st
      if(!hasAccess) {
         throw new Error('You do not have access to this document');
      }
+
+     return parseStringify(room);
     }
     catch(error) {
        console.log(`Error happened while getting the room : ${error}`);
