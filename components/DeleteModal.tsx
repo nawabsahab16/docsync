@@ -21,7 +21,7 @@ import { Button } from "./ui/button";
 export const DeleteModal = ({ roomId }: DeleteModalProps) => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-
+  
   const deleteDocumentHandler = async () => {
     setLoading(true);
 
@@ -29,7 +29,7 @@ export const DeleteModal = ({ roomId }: DeleteModalProps) => {
       await deleteDocument(roomId);
       setOpen(false);
     } catch (error) {
-      console.log("Error notif:", error);
+      console.log("Error notif:", error);  
     }
 
     setLoading(false);
