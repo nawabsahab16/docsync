@@ -15,7 +15,6 @@ const Home = async () => {
   if(!clerkUser) redirect('/sign-in');
 
   const roomDocuments = await getDocuments(clerkUser.emailAddresses[0].emailAddress);
-
   return (
     <main className="home-container">
       <Header className="sticky left-0 top-0">
@@ -26,7 +25,6 @@ const Home = async () => {
           </SignedIn>
         </div>
       </Header>
-
       {roomDocuments.data.length > 0 ? (
         <div className="document-list-container">
           <div className="document-list-title">
@@ -67,7 +65,6 @@ const Home = async () => {
             height={40}
             className="mx-auto"
           />
-
           <AddDocumentBtn 
             userId={clerkUser.id}
             email={clerkUser.emailAddresses[0].emailAddress}

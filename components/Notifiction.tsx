@@ -35,7 +35,7 @@ const Notifications = () => {
             INBOX_NOTIFICATION_TEXT_MENTION: (user: ReactNode) => (
               <>{user} mentioned you.</>
             )
-          }}
+          }} 
         >
           <InboxNotificationList>
             {unreadNotifications.length <= 0 && (
