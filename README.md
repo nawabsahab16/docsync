@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/6afb7eb7-ae75-4523-9c92-37178c23c734
 <strong>Flexible Sharing Options:</strong> Easily switch between viewer and editor roles.<br>
 
 ![Screenshot (484)](https://github.com/user-attachments/assets/498e1fcd-6b38-4568-8519-fcd2271522f2)
-![Screenshot (485)](https://github.com/user-attachments/assets/a4e6afdb-5bfd-4a75-9b1a-371a69b8de90)
+
 ![Screenshot (486)](https://github.com/user-attachments/assets/2d9fa778-746f-4af4-916b-4251f00dde5b)
 
 
